@@ -9,28 +9,33 @@ foods = {
   apples: 23, 
   grapes: 507, 
   eggs: 48
-}
+};
 
 // Write code that prints all of the 'keys' of the foods variable 
 // you created above:
 // YOUR CODE HERE
+console.log(Object.keys(foods));
 
 // Write code that prints all of the 'values' of the foods variable 
 // you created above:
 // YOUR CODE HERE
+console.log(Object.values(foods));
 
 // Write code that prints the value of the second food of the foods variable 
 // you created above:
 // YOUR CODE HERE
+console.log(foods.grapes);
 
 // Write code that adds a food to the foods object. 
 // Then, print the updated object:
 // YOUR CODE HERE
+foods.oranges = 10;
+console.log(foods);
 
 
-#-------------------
+console.log("#-------------------");
 // Part 2: Email
-#-------------------
+console.log("#-------------------");
 
 
 // Think about all the pieces of information associated with one single email in your inbox.
@@ -40,20 +45,30 @@ foods = {
 // value should be some appropriate value for that key. Work to have at least 5 key-value pairs.
 
 // Write code that logs your email object to the terminal.
+var email = {
+  senderName: "Rebecca Malone",
+  senderEmail: "bexxy@gmail.com",
+  dateSent: "2023-01-12",
+  subject: "Hey friend!",
+  readStatus: false,
+};
 
+console.log(email);
 
 // Write code that logs all of the 'keys' of the email object 
 // you created above:
 // YOUR CODE HERE
+console.log(Object.keys(email));
 
 // Write code that logs all of the 'values' of the email object 
 // you created above:
 // YOUR CODE HERE
+console.log(Object.values(email));
 
 
-#-------------------
+console.log("#-------------------");
 // Part 3: Many Emails - CHALLENGE!
-#-------------------
+console.log("#-------------------");
 
 // LONG EXAMPLE:
 // Now that we've learned about Objects AND Arrays, we can combine them.
@@ -99,3 +114,28 @@ console.log(posts[0]);
 // YOU DO: Create an array of at least 3 EMAIL Objects, using the same 
 // key-value pairs you used in your email Object above.
 // Then, print the email Array to the Terminal.
+
+emails = [
+  {
+    senderName: "Rebecca Malone",
+    senderEmail: "bexxy@gmail.com",
+    dateSent: "2023-01-12",
+    subject: "Hey friend!",
+    readStatus: false,
+  },
+  {
+    senderName: "Rebecca Malone",
+    senderEmail: "bexxy@gmail.com",
+    dateSent: "2023-01-12",
+    subject: "Hey friend!",
+    readStatus: false,
+  },
+  {
+    senderName: "Rebecca Malone",
+    senderEmail: "bexxy@gmail.com",
+    dateSent: "2023-01-12",
+    subject: "Hey friend!",
+    readStatus: false,
+  }
+];
+console.log(emails);
